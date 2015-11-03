@@ -173,9 +173,9 @@ Produce plots covering weekends only and weekdays only for activity comparison.
 
 library(lattice)
 
-steps_per_interval <- aggregate(steps ~ interval, df, mean)
+steps_per_interval <- aggregate(steps ~ interval + daytype, df, mean)
 
-xyplot(steps ~ interval | c("weekend", "weekday"),
+xyplot(steps ~ interval | daytype,
        data = steps_per_interval,
        type = "l",
        xlim =  c(0:2355, by = 5),
