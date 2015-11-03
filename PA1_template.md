@@ -186,6 +186,6 @@ xyplot(steps ~ interval | daytype,
 
 ![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15-1.png) 
 
-Not unexpectedly the overall activity patterns during a 24-hour cycle on weekends (Saturday and Sunday) and weekdays (Monday through Friday) is remarkably similar albeit with minor differences during some interval periods. This observation implies the Fitbit users are active throughout the entire week, not significantly more active during the weekend; although the trends might be influenced by replacement of NA values with the median steps during the 5-minute interval. The same observation occurs whether we select interval mean or interval median to replace non-existent data points for steps taken during corresponding intervals; interval median, however, more accurately reflects expected activity level during a specific interval across time.
+Not unexpectedly the overall activity patterns during a 24-hour cycle on weekends (Saturday and Sunday) and weekdays (Monday through Friday) is remarkably different albeit with minor differences during some interval periods. This observation implies the Fitbit users while active throughout the week are significantly more active during the weekend. The same observation occurs whether we select interval mean or interval median to replace non-existent data points for steps taken during corresponding intervals; interval median, however, more accurately reflects expected activity level during a specific interval across time.
 
 
